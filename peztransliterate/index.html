@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>document</title>
+</head>
+
+<body>
+
+	<nav class="header">transliterate</nav>
+	<div class="main">
+		<div class="translation-box">
+			<textarea id="input-text"
+					placeholder="enter the sentence">
+			</textarea>
+		</div>
+
+		<button id="btn-translate">ztr</button>
+		<select id="comboA" onchange="getComboA(this)">
+		  <option value="">Select ztr</option>
+		  <option value="unicode_to_inglish">unicode_to_inglish</option>
+		  <option value="inglish_to_vovelhindi">inglish_to_vovelhindi</option>
+		  <option value="vovelhindi_to_inglish">vovelhindi_to_inglish</option>
+		  <option value="unicode_to_vovelhindi">unicode_to_vovelhindi</option>
+		</select>
+
+		<div id="translated-box">
+			<textarea id="output-text"
+				placeholder="here you vill se translated tekst">
+			</textarea>
+		</div>
+	</div>
+	<footer class="footer">about us</footer>
+	<script src="transliterate.js"></script>
+	<script src="u_to_a.js"></script>
+	<script src="u5_to_a5_dict.js"></script>
+	<script src="u5_to_a8_dict.js"></script>
+</body>
+
+</html>
