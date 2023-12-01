@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Options</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>ztr transliterator extension</h1>
+
+      <div>
+        <div class="block with-logo">
+          <img src="assets/icons/favicon-128.png" width="100%" />
+        </div>
+        <div class="block with-text">
+          <h2>About</h2>
+          <p>
+            this phayrphoks ekstension is 1 oph the utilities in zabc utilities.
+            other hscii zabc utilies are :
+            <ol>
+              <a href="https://github.com/zava8/hpop">Android keypAd phur indik language & zustzszava</a>
+              <a href="https://github.com/zava8/hex">heksuletr hscii(0123456789LJQWXF)</a>
+              <a href="https://gitlab.com/zava8/zbuk">zbc picture buk</a>
+              <a href="https://github.com/zava8/mtr88">mtr88 to uze vith kde connect</a>
+            </ol>
+          </p>
+        </div>
+      </div>
+      <h2>transliterator</h2>
+      <p>transliterator for hindi bengali punjabi guzrati malayalam telugu tamil kannada oriya. This works directly in the browser. for learning hinDi_abc <a href="https://zinglish.vercel.app/">zinglish</a> vebapp is helpful.. See <a href="https://www.npmjs.com/package/libindik-transliteration">libindik's transliterator</a> for more language support</p>
+      <form id="transliterate-form">
+        <textarea class="materialize-textarea" id="input" placeholder="paste text here..."></textarea>
+        <label>tr_from_to:</label>
+        <select class="browser-default" id="id_tr_select">
+          <option value="2">ascii5 to hscii8</option>
+          <option value="0">1हिंदी_hinDi_zabc</option>
+          <option value="0">2বাংলা_baNgla_beNgali_zabc</option>
+          <option value="0">3मराठी_mrathi_zabc</option>
+          <option value="0">4తెలుగు_Telugu_zabc</option>
+          <option value="0">5தமிழ்_Tmil_zabc</option>
+          <option value="0">6ગુજરાતી_guzraTi_zabc</option>
+          <option value="0">7ಕನ್ನಡ_knrra_zabc</option>
+          <option value="0">8ଓଡ଼ିଆ_urdiya_zabc</option>
+          <option value="0">9മലയാളം_mlyalm_zabc</option>
+          <option value="0">Lਪੰਜਾਬੀ_pnzabi_gurumukhi_zabc</option>
+          <option value="0">Jತುಲ್ಲು_Tullu_zabc</option>
+          <option value="1">unicode to hscii8</option>
+          <option value="3">hscii8 to ascii5</option>
+        </select><br/>
+        <label>font(a5/a8):</label>
+        <select class="browser-default" id="id_font_select">
+          <option value="u5">abc</option>
+          <option value="ik">noabc</option>
+        </select>
+        <br/><br/>
+        <button class="btn">transliterate</button><br/>
+        <img src="assets/img/hpop09_400.gif" alt="ponetics alphabets" width="400" height="348"/><br/>
+        <a src="https://gitlab.com/hscii810/cms">more imazes for ztr</a><br/>
+        <a src="https://github.com/zava8/hpop">kvzabc hpop keybord</a><br/>
+      </form>
+      <textarea class="materialize-textarea" id="output" placeholder="Output will be shown here..." readonly="readonly"></textarea>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'u5';
+    src: url('../assets/fonts/u5.woff2') format('woff2'),
+        url('../assets/fonts/u5.woff') format('woff'),
+        url('../assets/fonts/u5.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0-9F;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'u8';
+    src: url('../assets/fonts/u8.woff2') format('woff2'),
+        url('../assets/fonts/u8.woff') format('woff'),
+        url('../assets/fonts/u8.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0-9F;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'bhu8';
+    src: url('../assets/fonts/bhu8.woff2') format('woff2'),
+        url('../assets/fonts/bhu8.woff') format('woff'),
+        url('../assets/fonts/bhu8.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0-9F;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'bvu8';
+    src: url('../assets/fonts/bvu8.woff2') format('woff2'),
+        url('../assets/fonts/bvu8.woff') format('woff'),
+        url('../assets/fonts/bvu8.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0-9F;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'u5c';
+    src: url('../assets/fonts/u5c.woff2') format('woff2'),
+        url('../assets/fonts/u5c.woff') format('woff'),
+        url('../assets/fonts/u5c.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0-9F;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'u5';
+    src: url('../assets/fonts/u5.woff2') format('woff2'),
+        url('../assets/fonts/u5.woff') format('woff'),
+        url('../assets/fonts/u5.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0-9F;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'hinwi8';
+    src: url('../assets/fonts/hinwi8.woff2') format('woff2'),
+        url('../assets/fonts/hinwi8.woff') format('woff'),
+        url('../assets/fonts/hinwi8.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    unicode-range: U+0-9F;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HinDi';
+    src: url('../assets/fonts/HinDi.woff2') format('woff2'),
+        url('../assets/fonts/HinDi.woff') format('woff'),
+        url('../assets/fonts/HinDi.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    unicode-range: U+0-9F;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hinglish';
+    src: url('../assets/fonts/Hinglish.woff2') format('woff2'),
+        url('../assets/fonts/Hinglish.woff') format('woff'),
+        url('../assets/fonts/Hinglish.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    unicode-range: U+0-9F;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hnskrit';
+    src: url('../assets/fonts/Hnskrit.woff2') format('woff2'),
+        url('../assets/fonts/Hnskrit.woff') format('woff'),
+        url('../assets/fonts/Hnskrit.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    unicode-range: U+0-9F;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ssu5p';
+    src: url('../assets/fonts/ssu5p.woff2') format('woff2'),
+        url('../assets/fonts/ssu5p.woff') format('woff'),
+        url('../assets/fonts/ssu5p.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0-9F;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'u5p';
+    src: url('../assets/fonts/u5p.woff2') format('woff2'),
+        url('../assets/fonts/u5p.woff') format('woff'),
+        url('../assets/fonts/u5p.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0-9F;
+    font-display: swap;
+}
+

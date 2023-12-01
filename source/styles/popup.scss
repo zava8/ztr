@@ -1,0 +1,123 @@
+@import "base/fonts";
+@import "base/reset";
+@import "base/variables";
+@import "hscii";
+
+body {
+  color: $black;
+  background-color: $greyWhite;
+  font-family: sans-serifs;
+}
+
+button {
+  border-radius: 8%;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: $blue;
+  color: white;
+  cursor: pointer;
+  padding: 8px 12px;
+  outline: none;
+  border: 1px solid #aaa;
+}
+
+button:hover {
+  border-color: #000;
+}
+
+/**
+ * Parts of code from Filament Group
+ * Copyright (c) 2014 Filament Group
+ * Licensed under MIT
+ * https://github.com/filamentgroup/select-css
+ */
+select, img{
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+  border-radius: .5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+#ol_url {
+  padding: 10px 10px 2px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+  border-radius: .5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+select:hover {
+  border-color: #888;
+}
+
+#popup {
+  min-width: 420px;
+  padding: 10px 10px;
+  text-align: left;
+
+  h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  .links__holder {
+    ul {
+      display: flex;
+      margin-top: 1em;
+      justify-content: space-around;
+    }
+  }
+
+  #transliterate, #untransliterate {
+    margin: 10px 0 0;
+  }
+
+  #untransliterate {
+    display: none;
+  }
+
+  .checkbox_holder * {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+
+#footer {
+  width: 100%;
+  padding: 10px 5px;
+  background: $blue;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+
+  #footer-left, #footer-right {
+    display: flex;
+  }
+
+  #footer-right {
+    text-align: right;
+    margin-left: auto;
+  }
+
+  a {
+    border-bottom: 3px dotted #fff;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  #goto-donate {
+    float: right;
+  }
+}
