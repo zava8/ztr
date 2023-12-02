@@ -30,11 +30,16 @@ buttonTranslate.addEventListener("click", clickHandler);
 function getComboA(selectObject) {
   var text = inputText.value;
   var value = selectObject.value;  
-  alert(value);
 	switch(value) {
 		case "unicode_to_inglish" :
 		  outputText.innerText = u_to_a(text,false);
 		break;
+		case "inglish_to_vovelhindi" :
+		  outputText.innerText = i_to_vhin(text);
+		break;
+		case "unicode_to_vovelhindi" :
+		  // alert(text);
+		  outputText.innerText = u_to_u8(text,false);
+		break;i_to_vhin
     }
-
 }

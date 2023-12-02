@@ -1,17 +1,17 @@
-var u_to_a = function (input,isa8) {
+var u_to_u8 = function (input,isa8) { //alert("in u_to_u8");
   function is_in_it (list, val) {
     if (!Array.isArray(list)) { list = Object.keys(list); }
     return list.indexOf(val) !== -1;
   }
-  const inputLength = input.length;
+  const inputLength = input.length; //alert(inputLength);
   let indeks = 0;
   let output = '';
   let curr_char = ''; let nekst_char = ''; // let prev_char = ''; 
   let curr_char_code = 0; let nekst_char_code = 0; // let prev_char_code = 0; 
   let prev_lang_code = 0; let curr_lang_code = 0; let nekst_lang_code = 0;
   let prev_char_modulo = 0; let curr_char_modulo = 0; let nekst_char_modulo = 0;
-  let u_to_a_dict = null ;
-  if(isa8) {u_to_a_dict = u5_to_a8_dict;} else {u_to_a_dict = u5_to_a5_dict;}
+  alert("u_to_a_dict");
+  let u_to_a_dict = u_to_u8_dict;
   while (indeks < inputLength) {
     if (0 === indeks) {
       prev_lang_code= curr_lang_code ; // prev_char = curr_char ; 
@@ -47,10 +47,10 @@ var u_to_a = function (input,isa8) {
           prev_lang_code>0x11 && prev_lang_code<0x1B &&
           is_in_it(u_to_a_dict.hard_consonants_modulo_list, prev_char_modulo)
         ) {
-           if(isa8) output += 'j'; else output += 'H';
+           if(isa8) output += 'j'; else output += 'ह';
           }
         else {
-          if(isa8) output += 'j'; else output += 'H';
+          if(isa8) output += 'j'; else output += 'ह';
          }
       }
       else if(2 == curr_char_modulo){ // 'मां: ऐस्पिरेंट्स में गुरी' : 'ma: espireNts mein guri', //  ं	902 anuswara	anusvara bindu
@@ -62,7 +62,7 @@ var u_to_a = function (input,isa8) {
       else if (is_in_it([7,8,9,0xA,0xD,0xE,0xF,0x10,0x13,0x14],curr_char_modulo)) { //'kAi'
         if ( prev_lang_code>0 && prev_char_modulo > 0x14 && prev_char_modulo < 0x3A)
         {
-          if(isa8) output += 'q'; else output += 'A';
+          if(isa8) output += 'q'; else output += 'अ';
          }
         output += u_to_a_dict.all_phoniks_list[curr_char_modulo];
       }
@@ -74,7 +74,8 @@ var u_to_a = function (input,isa8) {
       indeks++ ;
     }
   }
+  //alert(output);
   if(isa8) output = output.toLowerCase();
   return output;
 }
-module.exports = u_to_a
+module.exports = u_to_u8
