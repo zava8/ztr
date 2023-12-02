@@ -10,7 +10,7 @@ var u_to_u8 = function (input,isa8) { //alert("in u_to_u8");
   let curr_char_code = 0; let nekst_char_code = 0; // let prev_char_code = 0; 
   let prev_lang_code = 0; let curr_lang_code = 0; let nekst_lang_code = 0;
   let prev_char_modulo = 0; let curr_char_modulo = 0; let nekst_char_modulo = 0;
-  alert("u_to_a_dict");
+  // alert("u_to_a_dict");
   let u_to_a_dict = u_to_u8_dict;
   while (indeks < inputLength) {
     if (0 === indeks) {
@@ -56,7 +56,7 @@ var u_to_u8 = function (input,isa8) { //alert("in u_to_u8");
       else if(2 == curr_char_modulo){ // 'मां: ऐस्पिरेंट्स में गुरी' : 'ma: espireNts mein guri', //  ं	902 anuswara	anusvara bindu
         if( nekst_lang_code>0x11 && nekst_lang_code<0x1B && 2 < nekst_char_modulo )
         {
-          output += 'n';
+          output += 'न';
         }
       }
       else if (is_in_it([7,8,9,0xA,0xD,0xE,0xF,0x10,0x13,0x14],curr_char_modulo)) { //'kAi'
