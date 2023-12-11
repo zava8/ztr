@@ -1,4 +1,4 @@
-var u_to_u8 = function (input,isa8) { //alert("in u_to_u8");
+var u_to_u8pnz = function (input,isa8) { //alert("in u_to_u8");
   function is_in_it (list, val) {
     if (!Array.isArray(list)) { list = Object.keys(list); }
     return list.indexOf(val) !== -1;
@@ -10,8 +10,8 @@ var u_to_u8 = function (input,isa8) { //alert("in u_to_u8");
   let curr_char_code = 0; let nekst_char_code = 0; // let prev_char_code = 0; 
   let prev_lang_code = 0; let curr_lang_code = 0; let nekst_lang_code = 0;
   let prev_char_modulo = 0; let curr_char_modulo = 0; let nekst_char_modulo = 0;
-  // alert("u_to_a_dict");
-  let u_to_a_dict = u_to_u8_dict;
+  // alert("u_to_u8pnz_dict");
+  // let u_to_u8pnz_dict = u_to_u8pnz_dict;
   while (indeks < inputLength) {
     if (0 === indeks) {
       prev_lang_code= curr_lang_code ; // prev_char = curr_char ; 
@@ -41,32 +41,32 @@ var u_to_u8 = function (input,isa8) { //alert("in u_to_u8");
       nekst_char_modulo = -1 ;
     }
     if (curr_lang_code>0x11 && curr_lang_code<0x1B) {
-      // 'H', // 	ह	939	2361
+      // 'H', // 	ਹ	939	2361
       if( 0x39 === curr_char_modulo ) {
         if(
           prev_lang_code>0x11 && prev_lang_code<0x1B &&
-          is_in_it(u_to_a_dict.hard_consonants_modulo_list, prev_char_modulo)
+          is_in_it(u_to_u8pnz_dict.hard_consonants_modulo_list, prev_char_modulo)
         ) {
-           if(isa8) output += 'j'; else output += 'ह';
+           if(isa8) output += 'j'; else output += 'ਹ';
           }
         else {
-          if(isa8) output += 'j'; else output += 'ह';
+          if(isa8) output += 'j'; else output += 'ਹ';
          }
       }
       else if(2 == curr_char_modulo){ // 'मां: ऐस्पिरेंट्स में गुरी' : 'ma: espireNts mein guri', //  ं	902 anuswara	anusvara bindu
         if( nekst_lang_code>0x11 && nekst_lang_code<0x1B && 2 < nekst_char_modulo )
         {
-          output += 'न';
+          output += 'ਨ';
         }
       }
       else if (is_in_it([7,8,9,0xA,0xD,0xE,0xF,0x10,0x13,0x14],curr_char_modulo)) { //'kAi'
         if ( prev_lang_code>0 && prev_char_modulo > 0x14 && prev_char_modulo < 0x3A)
         {
-          if(isa8) output += 'q'; else output += 'अ';
+          if(isa8) output += 'q'; else output += 'ਅ';
          }
-        output += u_to_a_dict.all_phoniks_list[curr_char_modulo];
+        output += u_to_u8pnz_dict.all_phoniks_list[curr_char_modulo];
       }
-      else { output += u_to_a_dict.all_phoniks_list[curr_char_modulo]; }
+      else { output += u_to_u8pnz_dict.all_phoniks_list[curr_char_modulo]; }
       indeks++ ;
     } // end oph indik lang iph
     else {
@@ -78,4 +78,4 @@ var u_to_u8 = function (input,isa8) { //alert("in u_to_u8");
   if(isa8) output = output.toLowerCase();
   return output;
 }
-module.exports = u_to_u8
+module.exports = u_to_u8pnz

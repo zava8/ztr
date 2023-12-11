@@ -15,32 +15,43 @@
 	<nav class="header">transliterate</nav>
 	<div class="main">
 		<div class="translation-box">
-			<textarea id="input-text"
-					placeholder="enter the sentence">
-			</textarea>
+			<textarea id="input-text" cols=80 rows=16></textarea>
 		</div>
-
-		<button id="btn-translate" onclick="ztrclick()">ztr</button>
+		<div>
 		<select id="comboA" onchange="getComboA(this)">
 		  <option value="">Select ztr</option>
 		  <option value="unicode_to_inglish">unicode_to_inglish</option>
-		  <option value="inglish_to_vovelhindi">inglish_to_vovelhindi</option>
-		  <option value="vovelhindi_to_inglish">vovelhindi_to_inglish</option>
-		  <option value="unicode_to_vovelhindi">unicode_to_vovelhindi</option>
+		  <option value="i_to_u8hin">i_to_u8hin</option>
+		  <option value="u8hin_to_i">u8hin_to_i</option>
+		  <option value="u_to_u8hin">u_to_u8hin</option>
 		</select>
+		<button id="btn-translate" onclick="ztrclick()">ztr</button>
+		</div>
+		<div>
+		<button id="u_to_u8hin" onclick="u_to_u8hin_click()">unicode_to_हiनदi</button>
+		<button id="u_to_u8pnz" onclick="u_to_u8pnz_click()">unicode_to_ਪਨਜaਬi</button>
+		<button id="u_to_u8tmil" onclick="u_to_u8tmil_click()">u_to_u8tmil</button>
+		</div>
+		<div>
+		<button id="i_to_u8hin" onclick="i_to_u8hin_click()">inglish_to_हiनदi</button>
+		<button id="i_to_u8pnz" onclick="i_to_u8pnz_click()">inglish_to_ਪਨਜaਬi</button>
+		<button id="i_to_u8tmil" onclick="i_to_u8tmil_click()">inglish_to_தமiல</button>
+		</div>
 
 		<div id="translated-box">
-			<textarea id="output-text"
-				placeholder="here you vill se translated tekst">
-			</textarea>
+			<textarea id="output-text" cols=80 rows=8></textarea>
 		</div>
 	</div>
 	<footer class="footer">about us</footer>
 	<script src="transliterate.js"></script>
 	<script src="u_to_a.js"></script>
-	<script src="i_to_vhin.js"></script>
-	<script src="u_to_u8_dict.js"></script>
-	<script src="u_to_u8.js"></script>
+	<script src="i_to_u8hin.js"></script>
+	<script src="i_to_u8pnz.js"></script>
+	<script src="i_to_u8tmil.js"></script>
+	<script src="u_to_u8hin_dict.js"></script>
+	<script src="u_to_u8hin.js"></script>
+	<script src="u_to_u8pnz_dict.js"></script>
+	<script src="u_to_u8pnz.js"></script>
 	<script src="u5_to_a5_dict.js"></script>
 	<script src="u5_to_a8_dict.js"></script>
 </body>

@@ -1,4 +1,4 @@
-const i_to_vhin_dict = {
+const i_to_u8hin_dict = {
 	I : 'i',
 	O : 'o',
 	E : 'e',
@@ -32,23 +32,22 @@ const i_to_vhin_dict = {
 	V : 'व',
 	S : 'स',
 	s : 'स',
-	H : 'ह',
-	
+	H : 'ह',	
 	
 };
-var i_to_vhin = function (input) {
-  const inputLength = input.length; //alert(inputLength);
+var i_to_u8hin = function (input) {
+  const inputLength = input.length; alert(inputLength);
   let indeks = 0;
   let output = '';
   let curr_char = ''; let nekst_char = '';
   curr_char = input[indeks];  
   while (indeks < inputLength) {
 	
-	if(curr_char in i_to_vhin_dict) {output += i_to_vhin_dict[curr_char];}
+	if(curr_char in i_to_u8hin_dict) {output += i_to_u8hin_dict[curr_char];}
 	else {output += curr_char;}
     indeks++ ;
 	curr_char = input[indeks];
   }
   return output;
 }
-module.exports = i_to_vhin
+module.exports = i_to_u8hin

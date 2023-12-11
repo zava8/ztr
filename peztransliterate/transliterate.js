@@ -17,11 +17,23 @@ function getComboA(selectObject) {
 function ztrclick() {
   doztr(selectedztr);// alert(selectedztr);
 }
+function i_to_u8hin_click(){ doztr("i_to_u8hin"); }
+function i_to_u8pnz_click(){ doztr("i_to_u8pnz"); }
+function i_to_u8tmil_click(){ doztr("i_to_u8tmil"); }
+function u_to_u8hin_click(){
+	doztr("u_to_u8hin");
+}
+function u_to_u8pnz_click(){
+	doztr("u_to_u8pnz");
+}
 function doztr(selectedztr) {
 	var text = inputText.value;
 	switch(selectedztr) {
 	case "unicode_to_inglish" : outputText.innerText = u_to_a(text,false); break;
-	case "inglish_to_vovelhindi" : outputText.innerText = i_to_vhin(text); break;
-	case "unicode_to_vovelhindi" : outputText.innerText = u_to_u8(text,false);break;
+	case "i_to_u8hin" : outputText.innerText = i_to_u8hin(text); break;
+	case "i_to_u8pnz" : outputText.innerText = i_to_u8pnz(text); break;
+	case "i_to_u8tmil" : outputText.innerText = i_to_u8tmil(text); break;
+	case "u_to_u8hin" : outputText.innerText = u_to_u8hin(text,false);break;
+	case "u_to_u8pnz" : outputText.innerText = u_to_u8pnz(text,false);break;
     }
 }
