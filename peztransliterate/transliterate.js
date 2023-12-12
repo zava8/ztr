@@ -1,5 +1,5 @@
 // const u_to_a = require('./u_to_a.js');
-var inputText = document.querySelector('#input-text');
+var inputText = document.querySelector('#ita');
 var outputText = document.querySelector('#output-text');
 // var buttonTranslate = document.querySelector('#btn-translate');
 // var apiUrl = "https://api.funtranslations.com/translate/minion.json";
