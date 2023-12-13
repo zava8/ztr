@@ -19,8 +19,8 @@ function i_to_u8tmil_click(){ doztr("i_to_u8tmil"); }
 function u_to_u8hin_click(){ doztr("u_to_u8hin"); }
 function u_to_u8pnz_click(){ doztr("u_to_u8pnz"); }
 function doztr(selectedztr) {
-	let ota = document.querySelector('#output-text');
-	const itekst = document.querySelector('#input-text').value;
+	let ota = document.querySelector('#ota');
+	const itekst = document.querySelector('#ita').value;
 	switch(selectedztr) {
 	case "unicode_to_inglish" : ota.innerText = u_to_a(itekst,false); break;
 	case "i_to_u8hin" : ota.innerText = i_to_u8hin(itekst); break;
